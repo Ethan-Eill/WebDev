@@ -1,0 +1,186 @@
+
+/* Background */
+.container
+{   
+    background-color: rgb(27, 29, 23);
+    /* Setup */
+    position: relative;
+}
+
+/* Style the title */
+.title
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+    /* Cool CSS Testing */
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #3f14db 0%,
+    rgb(27, 29, 23) 29%,
+    rgb(253, 27, 102) 67%,
+    #26b0ff 100%
+  );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+/* Style the div that holds the game buttons */
+.main_board
+{
+    /* Center Horizontally and Vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Apply margins to top and left to truly center objects */
+    margin: 145px 0 0 -150px;
+}
+
+/* Styles the actual buttons */
+.game_button
+{
+    background-color: rgb(27, 29, 23);
+    width: 100px;
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    color: #1b1d17;
+    text-align: center;
+    border-color: rgb(253, 27, 102);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.game_button[disabled]
+{
+    background-color: rgb(27, 29, 23);
+    width: 100px;
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-color: rgb(253, 27, 102);
+    border-width: 5px;
+}
+
+/* Styles the win message */
+.message_div
+{   
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* Need specific value */
+    width: 200px;
+    color: rgb(102, 196, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+/* Styles the AI go first button */
+.ai_first_button
+{
+    position: absolute;
+    top: 550px;
+    right: 25%;
+    height: 60px;
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    border: 0ch;
+    border-radius: 50px;
+    background-color: rgb(85, 88, 77);
+    cursor: pointer;
+}
+
+/* Styles the Play Again button */
+.play_again_button
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 550px;
+    left: 25%;
+    height: 60px;
+    width: 150px;
+    border: 0ch;
+    border-radius: 50px;
+    background-color: #55584d;
+}
+
+
+/* Top left game button */
+.gb0
+{
+    border:0ch;
+}
+
+/* Top mid game button */
+.gb1
+{
+    border-top: 0ch;
+    border-bottom: 0ch;
+}
+
+/* Top right game button */
+.gb2
+{
+    border:0ch
+}
+
+/* Mid left game button */
+.gb3
+{
+    border-left: 0ch;
+    border-right: 0ch;
+}
+
+/* Mid right game button */
+.gb5
+{
+    border-right: 0ch;
+    border-left: 0ch;
+}
+
+/* Bottom left game button */
+.gb6
+{
+    border:0ch;
+}
+
+/* Bottom middle game button */
+.gb7
+{
+    border-bottom: 0ch;
+    border-top: 0ch;
+}
+
+/* Bottom right game button */
+.gb8
+{
+    border:0ch;
+}
